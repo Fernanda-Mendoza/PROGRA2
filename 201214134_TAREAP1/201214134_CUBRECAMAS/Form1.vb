@@ -1,136 +1,148 @@
 ﻿Public Class Form1
+    Sub precio()
+        txtpreciocosto.Text = Str(preciocosto)
+        txtprecioventa.Text = Str(precioventa)
+    End Sub
     Sub Detallematerial()
-        lino = preciolino * Val(TextBox1.Text)
-        TextBox7.Text = lino
+        lino = preciolino * Val(txtlino.Text)
+        txtmateriallino.Text = lino
 
-        algodon = precioalgodon * Val(TextBox2.Text)
-        TextBox8.Text = algodon
+        algodon = precioalgodon * Val(txtalgodon.Text)
+        txtmaterialalgodon.Text = algodon
 
-        seda = precioseda * Val(TextBox3.Text)
-        TextBox9.Text = seda
+        seda = precioseda * Val(txtseda.Text)
+        txtmaterialseda.Text = seda
 
-        hilocrudo = preciohilocrudo * Val(TextBox4.Text)
-        TextBox10.Text = hilocrudo
+        hilocrudo = preciohilocrudo * Val(txthilocrudo.Text)
+        txtmaterialhilocrudo.Text = hilocrudo
 
     End Sub
     Sub limpiar()
-        TextBox1.Clear()
-        TextBox2.Clear()
-        TextBox3.Clear()
-        TextBox4.Clear()
-        TextBox5.Clear()
-        TextBox6.Clear()
-        TextBox7.Clear()
-        TextBox8.Clear()
-        TextBox9.Clear()
-        TextBox10.Clear()
-        RadioButton1.Checked = False
-        RadioButton2.Checked = False
-        RadioButton3.Checked = False
-        RadioButton4.Checked = False
-        CheckBox1.Checked = 0
-        CheckBox2.Checked = 0
-        CheckBox3.Checked = 0
-        CheckBox4.Checked = 0
-        TextBox1.Focus()
+        txtlino.Clear()
+        txtalgodon.Clear()
+        txtseda.Clear()
+        txthilocrudo.Clear()
+        txtpreciocosto.Clear()
+        txtprecioventa.Clear()
+        txtmateriallino.Clear()
+        txtmaterialalgodon.Clear()
+        txtmaterialseda.Clear()
+        txtmaterialhilocrudo.Clear()
+        rdbimperial.Checked = False
+        rdbmatrimonial.Checked = False
+        rdbqueen.Checked = False
+        rdbking.Checked = False
+        ckblino.Checked = 0
+        ckbalgodon.Checked = 0
+        ckbseda.Checked = 0
+        ckbhilocrudo.Checked = 0
+        txtlino.Focus()
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If (CheckBox1.Checked) Then
-            TextBox1.Visible = True
-            TextBox1.Focus()
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles ckblino.CheckedChanged
+        If (ckblino.Checked) Then
+            txtlino.Visible = True
+            txtlino.Focus()
         Else
-            TextBox1.Clear()
-            TextBox1.Visible = False
+            txtlino.Clear()
+            txtlino.Visible = False
         End If
 
     End Sub
 
-    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
-        If (CheckBox2.Checked) Then
-            TextBox2.Visible = True
-            TextBox2.Focus()
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles ckbalgodon.CheckedChanged
+        If (ckbalgodon.Checked) Then
+            txtalgodon.Visible = True
+            txtalgodon.Focus()
         Else
-            TextBox2.Clear()
-            TextBox2.Visible = False
+            txtalgodon.Clear()
+            txtalgodon.Visible = False
         End If
     End Sub
 
-    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
-        If (CheckBox3.Checked) Then
-            TextBox3.Visible = True
-            TextBox3.Focus()
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles ckbseda.CheckedChanged
+        If (ckbseda.Checked) Then
+            txtseda.Visible = True
+            txtseda.Focus()
         Else
-            TextBox3.Clear()
-            TextBox3.Visible = False
+            txtseda.Clear()
+            txtseda.Visible = False
         End If
     End Sub
 
-    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
-        If (CheckBox4.Checked) Then
-            TextBox4.Visible = True
-            TextBox4.Focus()
+    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles ckbhilocrudo.CheckedChanged
+        If (ckbhilocrudo.Checked) Then
+            txthilocrudo.Visible = True
+            txthilocrudo.Focus()
         Else
-            TextBox4.Clear()
-            TextBox4.Visible = False
+            txthilocrudo.Clear()
+            txthilocrudo.Visible = False
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnsalir.Click
         If (MsgBox("DESEA SALIR", vbQuestion + vbYesNo, "MENSAJE DE SALIDA") = vbYes) Then
             Me.Close()
         Else limpiar()
-            TextBox1.Focus()
+            txtlino.Focus()
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnlimpiar.Click
         limpiar()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        TextBox5.Text = "0.00"
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
+        txtpreciocosto.Text = "0.00"
         preciocosto = 0.00
-        sumayardas = Val(TextBox1.Text) + Val(TextBox2.Text) + Val(TextBox3.Text) + Val(TextBox4.Text)
+        txtprecioventa.Text = "0.00"
+        precioventa = 0.00
 
-        If RadioButton1.Checked = True Then
+        sumayardas = Val(txtlino.Text) + Val(txtalgodon.Text) + Val(txtseda.Text) + Val(txthilocrudo.Text)
+
+        If rdbimperial.Checked = True Then
             If sumayardas = materialimperial Then
-                preciocosto = precioimperial + (Val(TextBox1.Text) * preciolino) + (Val(TextBox2.Text) + precioalgodon) + (Val(TextBox3.Text) * precioseda) + (Val(TextBox4.Text) * preciohilocrudo)
+                preciocosto = precioimperial + (Val(txtlino.Text) * preciolino) + (Val(txtalgodon.Text) + precioalgodon) + (Val(txtseda.Text) * precioseda) + (Val(txthilocrudo.Text) * preciohilocrudo)
                 precioventa = preciocosto + (preciocosto * 0.65)
                 Detallematerial()
+                precio()
 
             Else
                 MsgBox("SE NECESITAN 3 YARDAS DE MATERIAL", vbOKOnly, "ERROR")
 
             End If
 
-        ElseIf RadioButton2.Checked = True Then
+        ElseIf rdbmatrimonial.Checked = True Then
             If sumayardas = materialmatrimonial Then
-                preciocosto = preciomatrimonial + (Val(TextBox1.Text) * preciolino) + (Val(TextBox2.Text) + precioalgodon) + (Val(TextBox3.Text) * precioseda) + (Val(TextBox4.Text) * preciohilocrudo)
+                preciocosto = preciomatrimonial + (Val(txtlino.Text) * preciolino) + (Val(txtalgodon.Text) + precioalgodon) + (Val(txtseda.Text) * precioseda) + (Val(txthilocrudo.Text) * preciohilocrudo)
                 precioventa = preciocosto + (preciocosto * 0.65)
                 Detallematerial()
+                precio()
 
             Else
                 MsgBox("SE NECESITAN 5 YARDAS DE MATERIAL", vbOKOnly, "ERROR")
 
             End If
 
-        ElseIf RadioButton3.Checked Then
+        ElseIf rdbqueen.Checked Then
             If sumayardas = materialqueen Then
-                preciocosto = precioqueen + (Val(TextBox1.Text) * preciolino) + (Val(TextBox2.Text) + precioalgodon) + (Val(TextBox3.Text) * precioseda) + (Val(TextBox4.Text) * preciohilocrudo)
+                preciocosto = precioqueen + (Val(txtlino.Text) * preciolino) + (Val(txtalgodon.Text) + precioalgodon) + (Val(txtseda.Text) * precioseda) + (Val(txthilocrudo.Text) * preciohilocrudo)
                 precioventa = preciocosto + (preciocosto * 0.65)
                 Detallematerial()
+                precio()
 
             Else
                 MsgBox("SE NECESITAN 6 YARDAS DE MATERIAL", vbOKOnly, "ERROR")
 
             End If
 
-        ElseIf RadioButton4.Checked Then
+        ElseIf rdbking.Checked Then
             If sumayardas = materialking Then
-                preciocosto = precioking + (Val(TextBox1.Text) * preciolino) + (Val(TextBox2.Text) * precioalgodon) + (Val(TextBox3.Text) * precioseda) + (Val(TextBox4.Text) * preciohilocrudo)
+                preciocosto = precioking + (Val(txtlino.Text) * preciolino) + (Val(txtalgodon.Text) * precioalgodon) + (Val(txtseda.Text) * precioseda) + (Val(txthilocrudo.Text) * preciohilocrudo)
                 precioventa = preciocosto + (preciocosto * 0.65)
                 Detallematerial()
+                precio()
+
 
             Else
                 MsgBox("SE NECESITAN 7 YARDAS DE MATERIAL", vbOKOnly, "ERROR")
@@ -139,10 +151,9 @@
 
         End If
 
-        TextBox5.Text = Str(preciocosto)
-        TextBox6.Text = Str(precioventa)
 
-        
+
+
     End Sub
 
 

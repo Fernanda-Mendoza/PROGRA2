@@ -23,35 +23,35 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.rdbking = New System.Windows.Forms.RadioButton()
+        Me.rdbqueen = New System.Windows.Forms.RadioButton()
+        Me.rdbmatrimonial = New System.Windows.Forms.RadioButton()
+        Me.rdbimperial = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.txthilocrudo = New System.Windows.Forms.TextBox()
+        Me.txtseda = New System.Windows.Forms.TextBox()
+        Me.txtalgodon = New System.Windows.Forms.TextBox()
+        Me.txtlino = New System.Windows.Forms.TextBox()
+        Me.ckbhilocrudo = New System.Windows.Forms.CheckBox()
+        Me.ckbseda = New System.Windows.Forms.CheckBox()
+        Me.ckbalgodon = New System.Windows.Forms.CheckBox()
+        Me.ckblino = New System.Windows.Forms.CheckBox()
+        Me.btncalcular = New System.Windows.Forms.Button()
+        Me.btnlimpiar = New System.Windows.Forms.Button()
+        Me.btnsalir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtpreciocosto = New System.Windows.Forms.TextBox()
+        Me.txtprecioventa = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.txtmaterialhilocrudo = New System.Windows.Forms.TextBox()
+        Me.txtmaterialseda = New System.Windows.Forms.TextBox()
+        Me.txtmaterialalgodon = New System.Windows.Forms.TextBox()
+        Me.txtmateriallino = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -59,10 +59,10 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
-        Me.GroupBox1.Controls.Add(Me.RadioButton3)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.rdbking)
+        Me.GroupBox1.Controls.Add(Me.rdbqueen)
+        Me.GroupBox1.Controls.Add(Me.rdbmatrimonial)
+        Me.GroupBox1.Controls.Add(Me.rdbimperial)
         Me.GroupBox1.Location = New System.Drawing.Point(25, 28)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(184, 154)
@@ -70,60 +70,60 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tamaño"
         '
-        'RadioButton4
+        'rdbking
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(6, 117)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(65, 24)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "King"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.rdbking.AutoSize = True
+        Me.rdbking.Location = New System.Drawing.Point(6, 117)
+        Me.rdbking.Name = "rdbking"
+        Me.rdbking.Size = New System.Drawing.Size(65, 24)
+        Me.rdbking.TabIndex = 3
+        Me.rdbking.TabStop = True
+        Me.rdbking.Text = "King"
+        Me.rdbking.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rdbqueen
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(6, 86)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(82, 24)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Queen"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rdbqueen.AutoSize = True
+        Me.rdbqueen.Location = New System.Drawing.Point(6, 86)
+        Me.rdbqueen.Name = "rdbqueen"
+        Me.rdbqueen.Size = New System.Drawing.Size(82, 24)
+        Me.rdbqueen.TabIndex = 2
+        Me.rdbqueen.TabStop = True
+        Me.rdbqueen.Text = "Queen"
+        Me.rdbqueen.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rdbmatrimonial
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 55)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(115, 24)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Matrimonial"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdbmatrimonial.AutoSize = True
+        Me.rdbmatrimonial.Location = New System.Drawing.Point(6, 55)
+        Me.rdbmatrimonial.Name = "rdbmatrimonial"
+        Me.rdbmatrimonial.Size = New System.Drawing.Size(115, 24)
+        Me.rdbmatrimonial.TabIndex = 1
+        Me.rdbmatrimonial.TabStop = True
+        Me.rdbmatrimonial.Text = "Matrimonial"
+        Me.rdbmatrimonial.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'rdbimperial
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(6, 25)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 24)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Imperial"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rdbimperial.AutoSize = True
+        Me.rdbimperial.Location = New System.Drawing.Point(6, 25)
+        Me.rdbimperial.Name = "rdbimperial"
+        Me.rdbimperial.Size = New System.Drawing.Size(90, 24)
+        Me.rdbimperial.TabIndex = 0
+        Me.rdbimperial.TabStop = True
+        Me.rdbimperial.Text = "Imperial"
+        Me.rdbimperial.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.CheckBox4)
-        Me.GroupBox2.Controls.Add(Me.CheckBox3)
-        Me.GroupBox2.Controls.Add(Me.CheckBox2)
-        Me.GroupBox2.Controls.Add(Me.CheckBox1)
+        Me.GroupBox2.Controls.Add(Me.txthilocrudo)
+        Me.GroupBox2.Controls.Add(Me.txtseda)
+        Me.GroupBox2.Controls.Add(Me.txtalgodon)
+        Me.GroupBox2.Controls.Add(Me.txtlino)
+        Me.GroupBox2.Controls.Add(Me.ckbhilocrudo)
+        Me.GroupBox2.Controls.Add(Me.ckbseda)
+        Me.GroupBox2.Controls.Add(Me.ckbalgodon)
+        Me.GroupBox2.Controls.Add(Me.ckblino)
         Me.GroupBox2.Location = New System.Drawing.Point(227, 28)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(285, 154)
@@ -131,111 +131,111 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Material "
         '
-        'TextBox4
+        'txthilocrudo
         '
-        Me.TextBox4.Location = New System.Drawing.Point(163, 120)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox4.TabIndex = 7
-        Me.TextBox4.Text = "0"
-        Me.TextBox4.Visible = False
+        Me.txthilocrudo.Location = New System.Drawing.Point(163, 120)
+        Me.txthilocrudo.Name = "txthilocrudo"
+        Me.txthilocrudo.Size = New System.Drawing.Size(100, 26)
+        Me.txthilocrudo.TabIndex = 7
+        Me.txthilocrudo.Text = "0"
+        Me.txthilocrudo.Visible = False
         '
-        'TextBox3
+        'txtseda
         '
-        Me.TextBox3.Location = New System.Drawing.Point(163, 88)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox3.TabIndex = 6
-        Me.TextBox3.Text = "0"
-        Me.TextBox3.Visible = False
+        Me.txtseda.Location = New System.Drawing.Point(163, 88)
+        Me.txtseda.Name = "txtseda"
+        Me.txtseda.Size = New System.Drawing.Size(100, 26)
+        Me.txtseda.TabIndex = 6
+        Me.txtseda.Text = "0"
+        Me.txtseda.Visible = False
         '
-        'TextBox2
+        'txtalgodon
         '
-        Me.TextBox2.Location = New System.Drawing.Point(163, 56)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox2.TabIndex = 5
-        Me.TextBox2.Text = "0"
-        Me.TextBox2.Visible = False
+        Me.txtalgodon.Location = New System.Drawing.Point(163, 56)
+        Me.txtalgodon.Name = "txtalgodon"
+        Me.txtalgodon.Size = New System.Drawing.Size(100, 26)
+        Me.txtalgodon.TabIndex = 5
+        Me.txtalgodon.Text = "0"
+        Me.txtalgodon.Visible = False
         '
-        'TextBox1
+        'txtlino
         '
-        Me.TextBox1.Location = New System.Drawing.Point(163, 21)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox1.TabIndex = 4
-        Me.TextBox1.Text = "0"
-        Me.TextBox1.Visible = False
+        Me.txtlino.Location = New System.Drawing.Point(163, 21)
+        Me.txtlino.Name = "txtlino"
+        Me.txtlino.Size = New System.Drawing.Size(100, 26)
+        Me.txtlino.TabIndex = 4
+        Me.txtlino.Text = "0"
+        Me.txtlino.Visible = False
         '
-        'CheckBox4
+        'ckbhilocrudo
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(6, 118)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(106, 24)
-        Me.CheckBox4.TabIndex = 3
-        Me.CheckBox4.Text = "Hilo crudo"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.ckbhilocrudo.AutoSize = True
+        Me.ckbhilocrudo.Location = New System.Drawing.Point(6, 118)
+        Me.ckbhilocrudo.Name = "ckbhilocrudo"
+        Me.ckbhilocrudo.Size = New System.Drawing.Size(106, 24)
+        Me.ckbhilocrudo.TabIndex = 3
+        Me.ckbhilocrudo.Text = "Hilo crudo"
+        Me.ckbhilocrudo.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'ckbseda
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(7, 87)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(73, 24)
-        Me.CheckBox3.TabIndex = 2
-        Me.CheckBox3.Text = "Seda"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.ckbseda.AutoSize = True
+        Me.ckbseda.Location = New System.Drawing.Point(7, 87)
+        Me.ckbseda.Name = "ckbseda"
+        Me.ckbseda.Size = New System.Drawing.Size(73, 24)
+        Me.ckbseda.TabIndex = 2
+        Me.ckbseda.Text = "Seda"
+        Me.ckbseda.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'ckbalgodon
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(7, 56)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(94, 24)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Algodón"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.ckbalgodon.AutoSize = True
+        Me.ckbalgodon.Location = New System.Drawing.Point(7, 56)
+        Me.ckbalgodon.Name = "ckbalgodon"
+        Me.ckbalgodon.Size = New System.Drawing.Size(94, 24)
+        Me.ckbalgodon.TabIndex = 1
+        Me.ckbalgodon.Text = "Algodón"
+        Me.ckbalgodon.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'ckblino
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(7, 24)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(65, 24)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Lino"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ckblino.AutoSize = True
+        Me.ckblino.Location = New System.Drawing.Point(7, 24)
+        Me.ckblino.Name = "ckblino"
+        Me.ckblino.Size = New System.Drawing.Size(65, 24)
+        Me.ckblino.TabIndex = 0
+        Me.ckblino.Text = "Lino"
+        Me.ckblino.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btncalcular
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(570, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(109, 48)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "CALCULAR"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btncalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btncalcular.Location = New System.Drawing.Point(570, 29)
+        Me.btncalcular.Name = "btncalcular"
+        Me.btncalcular.Size = New System.Drawing.Size(109, 48)
+        Me.btncalcular.TabIndex = 2
+        Me.btncalcular.Text = "CALCULAR"
+        Me.btncalcular.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnlimpiar
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(570, 97)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(109, 41)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "LIMPIAR"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnlimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnlimpiar.Location = New System.Drawing.Point(570, 97)
+        Me.btnlimpiar.Name = "btnlimpiar"
+        Me.btnlimpiar.Size = New System.Drawing.Size(109, 41)
+        Me.btnlimpiar.TabIndex = 3
+        Me.btnlimpiar.Text = "LIMPIAR"
+        Me.btnlimpiar.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnsalir
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(570, 150)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(109, 50)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "SALIR"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnsalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnsalir.Location = New System.Drawing.Point(570, 150)
+        Me.btnsalir.Name = "btnsalir"
+        Me.btnsalir.Size = New System.Drawing.Size(109, 50)
+        Me.btnsalir.TabIndex = 4
+        Me.btnsalir.Text = "SALIR"
+        Me.btnsalir.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -255,26 +255,26 @@ Partial Class Form1
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Precio Venta:  Q"
         '
-        'TextBox5
+        'txtpreciocosto
         '
-        Me.TextBox5.Location = New System.Drawing.Point(579, 239)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox5.TabIndex = 7
+        Me.txtpreciocosto.Location = New System.Drawing.Point(579, 239)
+        Me.txtpreciocosto.Name = "txtpreciocosto"
+        Me.txtpreciocosto.Size = New System.Drawing.Size(100, 26)
+        Me.txtpreciocosto.TabIndex = 7
         '
-        'TextBox6
+        'txtprecioventa
         '
-        Me.TextBox6.Location = New System.Drawing.Point(579, 298)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox6.TabIndex = 8
+        Me.txtprecioventa.Location = New System.Drawing.Point(579, 298)
+        Me.txtprecioventa.Name = "txtprecioventa"
+        Me.txtprecioventa.Size = New System.Drawing.Size(100, 26)
+        Me.txtprecioventa.TabIndex = 8
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.TextBox10)
-        Me.GroupBox3.Controls.Add(Me.TextBox9)
-        Me.GroupBox3.Controls.Add(Me.TextBox8)
-        Me.GroupBox3.Controls.Add(Me.TextBox7)
+        Me.GroupBox3.Controls.Add(Me.txtmaterialhilocrudo)
+        Me.GroupBox3.Controls.Add(Me.txtmaterialseda)
+        Me.GroupBox3.Controls.Add(Me.txtmaterialalgodon)
+        Me.GroupBox3.Controls.Add(Me.txtmateriallino)
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.Label4)
@@ -285,6 +285,34 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 9
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Detalle del Precio de Costo: "
+        '
+        'txtmaterialhilocrudo
+        '
+        Me.txtmaterialhilocrudo.Location = New System.Drawing.Point(219, 124)
+        Me.txtmaterialhilocrudo.Name = "txtmaterialhilocrudo"
+        Me.txtmaterialhilocrudo.Size = New System.Drawing.Size(100, 26)
+        Me.txtmaterialhilocrudo.TabIndex = 15
+        '
+        'txtmaterialseda
+        '
+        Me.txtmaterialseda.Location = New System.Drawing.Point(219, 92)
+        Me.txtmaterialseda.Name = "txtmaterialseda"
+        Me.txtmaterialseda.Size = New System.Drawing.Size(100, 26)
+        Me.txtmaterialseda.TabIndex = 14
+        '
+        'txtmaterialalgodon
+        '
+        Me.txtmaterialalgodon.Location = New System.Drawing.Point(219, 60)
+        Me.txtmaterialalgodon.Name = "txtmaterialalgodon"
+        Me.txtmaterialalgodon.Size = New System.Drawing.Size(100, 26)
+        Me.txtmaterialalgodon.TabIndex = 13
+        '
+        'txtmateriallino
+        '
+        Me.txtmateriallino.Location = New System.Drawing.Point(219, 27)
+        Me.txtmateriallino.Name = "txtmateriallino"
+        Me.txtmateriallino.Size = New System.Drawing.Size(100, 26)
+        Me.txtmateriallino.TabIndex = 12
         '
         'Label6
         '
@@ -322,34 +350,6 @@ Partial Class Form1
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Material Lino:  Q"
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(219, 27)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox7.TabIndex = 12
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(219, 60)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox8.TabIndex = 13
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(219, 92)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox9.TabIndex = 14
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(219, 124)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox10.TabIndex = 15
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -357,13 +357,13 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(734, 374)
         Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.txtprecioventa)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnsalir)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtpreciocosto)
+        Me.Controls.Add(Me.btnlimpiar)
+        Me.Controls.Add(Me.btncalcular)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
@@ -380,33 +380,33 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents rdbking As RadioButton
+    Friend WithEvents rdbqueen As RadioButton
+    Friend WithEvents rdbmatrimonial As RadioButton
+    Friend WithEvents rdbimperial As RadioButton
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents ckbhilocrudo As CheckBox
+    Friend WithEvents ckbseda As CheckBox
+    Friend WithEvents ckbalgodon As CheckBox
+    Friend WithEvents ckblino As CheckBox
+    Friend WithEvents btncalcular As Button
+    Friend WithEvents txthilocrudo As TextBox
+    Friend WithEvents txtseda As TextBox
+    Friend WithEvents txtalgodon As TextBox
+    Friend WithEvents txtlino As TextBox
+    Friend WithEvents btnlimpiar As Button
+    Friend WithEvents btnsalir As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txtpreciocosto As TextBox
+    Friend WithEvents txtprecioventa As TextBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtmaterialhilocrudo As TextBox
+    Friend WithEvents txtmaterialseda As TextBox
+    Friend WithEvents txtmaterialalgodon As TextBox
+    Friend WithEvents txtmateriallino As TextBox
 End Class
