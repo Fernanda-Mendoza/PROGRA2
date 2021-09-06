@@ -17,6 +17,8 @@
         ListBox5.Items.Clear()
         ListBox6.Items.Clear()
         ListBox7.Items.Clear()
+        ListBox8.Items.Clear()
+        ListBox9.Items.Clear()
 
     End Sub
 

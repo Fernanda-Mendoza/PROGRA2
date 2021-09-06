@@ -55,6 +55,10 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ListBox8 = New System.Windows.Forms.ListBox()
+        Me.ListBox9 = New System.Windows.Forms.ListBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -69,7 +73,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CALCULARToolStripMenuItem, Me.LIMPIARToolStripMenuItem, Me.LIMPIARVECTORESToolStripMenuItem, Me.SALIRToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(981, 33)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1272, 33)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -292,6 +296,10 @@ Partial Class Form1
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Label13)
+        Me.GroupBox4.Controls.Add(Me.Label12)
+        Me.GroupBox4.Controls.Add(Me.ListBox9)
+        Me.GroupBox4.Controls.Add(Me.ListBox8)
         Me.GroupBox4.Controls.Add(Me.Label11)
         Me.GroupBox4.Controls.Add(Me.Label10)
         Me.GroupBox4.Controls.Add(Me.Label9)
@@ -308,7 +316,7 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.ListBox1)
         Me.GroupBox4.Location = New System.Drawing.Point(12, 308)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(957, 289)
+        Me.GroupBox4.Size = New System.Drawing.Size(1219, 289)
         Me.GroupBox4.TabIndex = 11
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Resultados"
@@ -316,20 +324,20 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(839, 33)
+        Me.Label11.Location = New System.Drawing.Point(832, 33)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(85, 20)
+        Me.Label11.Size = New System.Drawing.Size(97, 20)
         Me.Label11.TabIndex = 17
-        Me.Label11.Text = "Pago Total"
+        Me.Label11.Text = "Pago Parcial"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(702, 35)
+        Me.Label10.Location = New System.Drawing.Point(690, 35)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(87, 20)
+        Me.Label10.Size = New System.Drawing.Size(119, 20)
         Me.Label10.TabIndex = 16
-        Me.Label10.Text = "Descuento"
+        Me.Label10.Text = "Pago Con Mora"
         '
         'Label9
         '
@@ -376,12 +384,50 @@ Partial Class Form1
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Servicio"
         '
+        'ListBox8
+        '
+        Me.ListBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ListBox8.FormattingEnabled = True
+        Me.ListBox8.ItemHeight = 20
+        Me.ListBox8.Location = New System.Drawing.Point(961, 66)
+        Me.ListBox8.Name = "ListBox8"
+        Me.ListBox8.Size = New System.Drawing.Size(120, 204)
+        Me.ListBox8.TabIndex = 18
+        '
+        'ListBox9
+        '
+        Me.ListBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ListBox9.FormattingEnabled = True
+        Me.ListBox9.ItemHeight = 20
+        Me.ListBox9.Location = New System.Drawing.Point(1099, 66)
+        Me.ListBox9.Name = "ListBox9"
+        Me.ListBox9.Size = New System.Drawing.Size(120, 204)
+        Me.ListBox9.TabIndex = 19
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(972, 33)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(87, 20)
+        Me.Label12.TabIndex = 20
+        Me.Label12.Text = "Descuento"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(1114, 33)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(85, 20)
+        Me.Label13.TabIndex = 21
+        Me.Label13.Text = "Pago Total"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(981, 609)
+        Me.ClientSize = New System.Drawing.Size(1272, 609)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -436,4 +482,8 @@ Partial Class Form1
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents ListBox9 As ListBox
+    Friend WithEvents ListBox8 As ListBox
 End Class
